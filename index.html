@@ -106,14 +106,16 @@
     <section id="features">
       <div class="container">
         <div class="row">
-          <h2 class="section__title">
+         <div class="books__header">  
+          <h2 class="section__title books__header--title">
             Featured <span class="purple">Books</span>
           </h2>
-          <select id="filter"
+          <select id="filter" onchange="filterBooks(event)">
             <option value="" disabled selected>Sort</option>
-            <option value="" disabled selected>LOW_TO_HIGHT</option>
-            <option value="" disabled selected>HIGH_TO_LOW</option>
-            <option value="" disabled selected>RATING</option>
+            <option value="LOW_TO_HIGH">Price, Low to High</option>
+            <option value="HIGH_TO_LOW">Price, High to Low</option>
+            <option value="RATING">Rating</option>
+          </select>
           <div class="books">
             <div class="book">
               <figure class="book__img--wrapper">
@@ -192,7 +194,7 @@
       </div>
      </div>
     </section>
-    
+
     <section id="recent">
       <div class="container">
         <div class="row">
