@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/6487f0a3d4.js" crossorigin="anonymous"></script>
   <script src="books.js"></script>
 </head>
 
@@ -109,6 +109,11 @@
           <h2 class="section__title">
             Featured <span class="purple">Books</span>
           </h2>
+          <select id="filter"
+            <option value="" disabled selected>Sort</option>
+            <option value="" disabled selected>LOW_TO_HIGHT</option>
+            <option value="" disabled selected>HIGH_TO_LOW</option>
+            <option value="" disabled selected>RATING</option>
           <div class="books">
             <div class="book">
               <figure class="book__img--wrapper">
@@ -185,8 +190,9 @@
           </div>
         </div>
       </div>
+     </div>
     </section>
-
+    
     <section id="recent">
       <div class="container">
         <div class="row">
