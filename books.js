@@ -67,7 +67,7 @@ function priceHTML(originalPrice, salePrice) {
 function ratingsHTML(rating) {
   let ratingHTML = "";
   for (let i = 0; i < Math.floor(rating); ++i) {
-    ratingHTML += '<i class="fas fa-star"></i>\n';
+    ratingHTML += '<i class="fas fa-star"></i>\n'; 
   }
   if (!Number.isInteger(rating)) {
     ratingHTML += '<i class="fas fa-star-half-alt"></i>\n';
@@ -91,7 +91,7 @@ function getBooks() {
         {
           id: 1,
           title: "Crack the Coding Interview",
-          url: "assets/crack the coding interview.png",
+          url: "assets/crack_the_coding_interview.png",
           originalPrice: 49.95,
           salePrice: 14.95,
           rating: 4.5,
@@ -99,7 +99,7 @@ function getBooks() {
         {
           id: 2,
           title: "Atomic Habits",
-          url: "assets/atomic habits.jpg",
+          url: "assets/atomic_habits.jpg",
           originalPrice: 39,
           salePrice: null,
           rating: 5,
@@ -107,7 +107,7 @@ function getBooks() {
         {
           id: 3,
           title: "Deep Work",
-          url: "assets/deep work.jpeg",
+          url: "assets/deep_work.jpeg",
           originalPrice: 29,
           salePrice: 12,
           rating: 5,
