@@ -6,6 +6,7 @@ function closeMenu() {
   document.body.classList.remove('menu--open')
 }
 
+/* let books stands alone, nothing after it, not sure why */
 let books
 
 async function renderBooks(filter) {
